@@ -4,13 +4,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPixelatedPass } from 'three/addons/postprocessing/RenderPixelatedPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
 let camera: THREE.OrthographicCamera
 let scene: THREE.Scene
 let renderer: THREE.WebGLRenderer
 let composer: EffectComposer
-let clock: THREE.Clock;
 
 init();
 
@@ -24,8 +22,6 @@ function init() {
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x151729);
-
-  clock = new THREE.Clock();
 
   renderer = new THREE.WebGLRenderer();
   renderer.shadowMap.enabled = true;
