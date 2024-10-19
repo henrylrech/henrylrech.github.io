@@ -7,8 +7,9 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import { Mordecai, Rigby } from './characters';
-import { Floor, Sofa, Table } from './objects';
+import { Floor, Sofa, Table, TV, TVModem, TVScreen } from './objects';
 import { AmbientLight, DirectionalLight, Spotlight } from './lights';
+import { image } from './materials';
 
 let camera: THREE.OrthographicCamera
 let scene: THREE.Scene
@@ -22,7 +23,7 @@ function init() {
   const aspectRatio = window.innerWidth / window.innerHeight;
 
   camera = new THREE.OrthographicCamera(- aspectRatio, aspectRatio, 1, - 1, 0.1, 10);
-  camera.position.y = 2 * Math.tan(Math.PI / 6);
+  camera.position.y = 2 * Math.tan(Math.PI / 8);
   camera.position.z = 2;
 
   scene = new THREE.Scene();
@@ -56,6 +57,9 @@ function init() {
   Floor(scene)
   Sofa(scene)
   Table(scene)
+  TV(scene)
+  TVModem(scene)
+  TVScreen(scene)
 
   //characters
 

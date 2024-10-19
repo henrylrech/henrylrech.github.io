@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { sofaMaterial, woodMaterial } from "./materials";
+import { sofaMaterial, tvMaterial, woodMaterial, image } from "./materials";
 import pixelTexture from './util/pixelTexture';
 
 function addBox(scene: THREE.Scene, sizeX: number, sizeY: number, sizeZ: number, x: number, y: number, z: number, rotation: number, material: any) {
@@ -62,4 +62,28 @@ export function Table(scene: THREE.Scene) {
   addBox(scene, .02, .24, .02, -.23, 0, .42, 0, woodMaterial)
   addBox(scene, .02, .24, .02, .23, 0, .78, 0, woodMaterial)
   addBox(scene, .02, .24, .02, -.23, 0, .78, 0, woodMaterial)
+}
+
+export function TV(scene: THREE.Scene) {
+  addBox(scene, .05, .30, .1, .175, .241, .48, 0, tvMaterial)
+  addBox(scene, .12, .30, .1, -.140, .241, .48, 0, tvMaterial)
+  addBox(scene, .4, .05, .1, 0, .241, .48, 0, tvMaterial)
+  addBox(scene, .4, .05, .1, 0, .492, .48, 0, tvMaterial)
+  addBox(scene, .4, .30, .15, 0, .241, .55, 0, tvMaterial)
+  addBox(scene, .35, .25, .25, 0, .241, .6, 0, tvMaterial)
+}
+
+export function TVModem(scene: THREE.Scene) {
+  addBox(scene, .14, .06, .1, .04, .161, .52, 0, tvMaterial)
+}
+
+export function TVScreen(scene: THREE.Scene) {
+    var mesh = new THREE.Mesh(
+    new THREE.PlaneGeometry( 1, 1, 1, 1 ),
+    image
+  )
+  mesh.rotateY(Math.PI)
+  mesh.position.set(.05, .4, .45)
+  mesh.scale.set(.3, .25, .3)
+  scene.add(mesh)
 }
