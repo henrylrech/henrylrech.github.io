@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rigby || Regular Show
+* source:	https://sketchfab.com/3d-models/rigby-regular-show-928b585ff1de4b63b0c6cadc3170290b
+* author:	metekrts (https://sketchfab.com/metekrts)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rigby || Regular Show" (https://sketchfab.com/3d-models/rigby-regular-show-928b585ff1de4b63b0c6cadc3170290b) by metekrts (https://sketchfab.com/metekrts) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
