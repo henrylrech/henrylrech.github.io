@@ -9,7 +9,6 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { Mordecai, Rigby } from './characters';
 import { Floor, Sofa, Table, TV, TVModem, TVScreen } from './objects';
 import { AmbientLight, DirectionalLight, Spotlight } from './lights';
-import { image } from './materials';
 
 let camera: THREE.OrthographicCamera
 let scene: THREE.Scene
